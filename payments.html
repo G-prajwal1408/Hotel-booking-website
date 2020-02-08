@@ -73,16 +73,50 @@
 				</nav>
 <h2 style="color:black;">PAYMENT</h2>
 
-<form ><br>
-  Card Number:<br>
-  <input type="text" name="Card number" value="****-****-****"style="color:black;">
-  <br>
-Expire date:<br>
-  <input type="text" name="Expire date" value="mm"style="color:black;">
-  <input type="text" name="Expire date" value="yy"style="color:black;">
-<br>
-CVV:<br>
-<input type="text" name="CVV" value="CVV"style="color:black;">
-  <br><br>
-  <input type="submit" value="Pay"style="color:black;">
+<form >
+	 <div class="checkout">
+  <h1>Checkout</h1>
+  <p>You are about to buy:</p>
+  <p><img class="item" title="Image of Cover" src="" />assets\img\rooms\5.jpg</p>
+  <p>You don't have a card saved with us, so you'll need to add one now</p>
+  <div class="card">
+    <div class="front side">
+      <span class="company">
+        CARD
+      </span>
+      PAYMENT CARD
+      <input type="text" placeholder="Card number" class="cc-num" />
+      <div>
+        Expires:
+        <input type="text" placeholder="MM/YY" class="cc-exp" />
+      </div>
+    </div>
+    <div class="back side">
+      <div class="stripe"></div>
+      <div class="signature">
+        <span class="right">
+        CVC: <input type="text" placeholder="000" class="cc-cvc" maxlength="4" />
+        </span>
+        <span class="sig">
+          our lovely customer
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="button flip">
+    Flip over
+  </div>
+  <p>Now, where to send it?</p>
+   <div class="addr">
+   <input type="text" placeholder="Address Line 1" />
+    <input type="text" placeholder="Address Line 2" />
+    <input type="text" placeholder="Town" />
+    <input type="text" placeholder="Postcode" />
+    <input type="text" placeholder="Country" />
+   </div>
+   <div class="button">
+    Continue
+  </div>
+   
+</div>
 </form> 
